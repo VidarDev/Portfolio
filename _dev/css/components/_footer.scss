@@ -1,0 +1,63 @@
+/* =============== FOOTER =============== */
+
+/* ========== Desktop Resolution ========== */
+#footer {
+  background-color: $light-grey;
+  color: $neutral-white;
+  text-align: center;
+
+  .footer__container {
+    padding: 2rem 0 6.5rem;
+
+    .footer__social {
+      display: flex;
+      justify-content: center;
+      column-gap: 1rem;
+      margin-bottom: 1rem;
+
+      .footer__social-link {
+        background-color: $neutral-white;
+        border: 2px solid $neutral-white;
+        box-shadow: $shadow;
+        aspect-ratio: 1/1;
+        border-radius: .25rem;
+        padding: .5rem;
+        display: flex;
+        width: fit-content;
+        transition: .4s;
+
+        &:hover {
+          border: 2px solid $brand-primary;
+          box-shadow: none;
+
+        }
+
+        img {
+          width: 100%;
+          max-width: 24px;
+
+        }
+      }
+    }
+
+    .footer__copy {
+
+    }
+  }
+}
+
+/* ========== Laptop Resolution ========== */
+
+/* ========== Tablet Resolution ========== */
+
+/* ========== Mobile Resolution ========== */
+@media screen and (max-width: $breakpoints-xs) {
+
+  #footer {
+
+    .footer__container {
+      padding: 2rem 0 5.5rem;
+
+    }
+  }
+}

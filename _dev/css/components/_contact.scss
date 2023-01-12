@@ -1,0 +1,118 @@
+/* =============== CONTACT =============== */
+
+/* ========== Desktop Resolution ========== */
+#contact {
+  padding: 5rem 0 3rem;
+
+  .contact__container {
+    width: $container-md;
+
+    .contact__title {
+      text-align: center;
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      color: $light-grey;
+
+    }
+
+    .contact__info {
+      display: flex;
+      gap: 3rem;
+      font-size: $font-size_small;
+      line-height: calc($font-size_small + .25rem);
+
+      .contact__card {
+        background-color: $neutral-white;
+        box-shadow: $shadow;
+        padding: 1rem 1.5rem;
+        border-radius: 1.25rem;
+        flex: 0 1 calc(100% - 1.5rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contact__icon {
+          width: 2rem;
+          height: 2rem;
+          aspect-ratio: 1/1;
+          margin-inline: auto;
+          margin-bottom: .25rem;
+          display: block;
+
+        }
+
+        .contact__title {
+          line-height: calc($font-size_small + .25rem);
+          text-align: center;
+          font-size: $font-size_small;
+          margin-bottom: 0;
+          color: $dark-grey;
+        }
+
+        .contact__link {
+          display: block;
+          text-align: center;
+          margin-bottom: .5rem;
+
+        }
+
+        .contact__button {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: fit-content;
+          gap: .25rem;
+
+          span {
+            color: $brand-primary;
+
+          }
+
+          .contact__icon {
+            height: 20px;
+            width: 20px;
+            aspect-ratio: 1/1;
+            margin-inline: auto;
+            margin-bottom: 0;
+            display: inline-block;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ========== Laptop Resolution ========== */
+
+/* ========== Tablet Resolution ========== */
+@media screen and (max-width: $breakpoints-lg) {
+
+  #contact {
+
+    .contact__container {
+
+      .contact__info {
+        gap: 2rem;
+
+      }
+    }
+  }
+}
+
+/* ========== Mobile Resolution ========== */
+@media screen and (max-width: $breakpoints-sm) {
+
+  #contact {
+
+    .contact__container {
+      width: calc(var(--container-sm) - 10rem);
+
+      .contact__info {
+        gap: 2rem;
+        flex-direction: column;
+
+      }
+    }
+  }
+}

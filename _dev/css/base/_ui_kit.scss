@@ -1,0 +1,74 @@
+/* =============== UI KIT =============== */
+
+/* ========== Desktop Resolution ========== */
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: $brand-secondary;
+
+  &-thumb{
+    background-color: $light-grey;
+    border-radius: .5rem;
+
+    &:hover{
+      background-color: $dark-grey;
+    }
+  }
+}
+
+h1 {
+  font-size: $font-size_h1;
+  font-weight: $weight-bold;
+  line-height: calc(#{$font-size_h1} + .75rem);
+
+}
+
+h2 {
+  font-size: $font-size_h2;
+  font-weight: $weight-bold;
+  line-height: calc(#{$font-size_h2} + .5rem);
+
+}
+
+h3 {
+  font-size: $font-size_h3;
+  font-weight: $weight-standard;
+  line-height: calc(#{$font-size_h3} + .25rem);
+
+}
+
+.btn {
+  display: inline-flex;
+  background: $brand-primary;
+  color: $neutral-black;
+  border: 2px solid $brand-primary;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  justify-content: center;
+  transition: .4s;
+  width: fit-content;
+
+  &--outline {
+    background: transparent;
+
+  }
+
+  &:hover {
+    border: 2px solid $light-grey;
+
+  }
+}
+
+/* ========== Laptop Resolution ========== */
+
+/* ========== Tablet Resolution ========== */
+
+/* ========== Mobile Resolution ========== */
+@media screen and (max-width: $breakpoints-xs) {
+  h1 {
+    font-size: calc(#{$font-size_h1} - .5rem);
+    font-weight: $weight-bold;
+    line-height: calc(#{$font-size_h1} - .5rem + .75rem);
+
+  }
+}

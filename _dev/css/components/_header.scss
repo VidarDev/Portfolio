@@ -1,0 +1,140 @@
+/* =============== HEADER =============== */
+
+/* ========== Desktop Resolution ========== */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z_positive;
+  width: 100%;
+  background-color: $brand-secondary;
+  transition: .4s;
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+
+    .header__logo {
+
+      &:hover {
+        svg {
+          fill: $brand-primary;
+          transform: scale(1.1);
+        }
+      }
+
+      svg {
+        width: auto;
+        height: 1.75rem;
+        transition: .4s;
+      }
+    }
+
+    .header__language {
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      img {
+        width: auto;
+        height: 1.75rem;
+        border-radius: .25rem;
+        border: 2px solid $light-grey;
+        transition: .4s;
+      }
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+
+  .nav__menu {
+    position: fixed;
+    bottom: 1rem;
+    max-width: 90%;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 999px;
+    transition: .4s;
+    backdrop-filter: blur(8px);
+
+    .nav__list {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+
+      .nav__item {
+
+        .nav__link {
+          display: flex;
+          padding: .5rem;
+          border-radius: 999px;
+
+          &:hover {
+            background: $linear_brand-primary;
+
+          }
+
+          &.is-active {
+            background: $linear_brand-primary;
+
+            &:hover {
+              outline: 2px solid $light-grey;
+
+            }
+          }
+
+          img {
+            width: auto;
+            height: 1.5rem;
+            aspect-ratio: 1/1;
+            transition: .4s;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ========== Laptop Resolution ========== */
+
+/* ========== Tablet Resolution ========== */
+
+/* ========== Mobile Resolution ========== */
+@media screen and (max-width: 430px) {
+
+  .nav {
+
+    .nav__menu {
+      width: $breakpoints-xs;
+
+      .nav__list {
+        gap: inherit;
+
+        .nav__item.experience {
+          display: none;
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoints-xs) {
+
+  .nav {
+
+    .nav__menu {
+      max-width: 95%;
+      padding: .5rem .75rem;
+    }
+  }
+}

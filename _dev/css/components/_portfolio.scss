@@ -1,0 +1,290 @@
+/* =============== PORTFOLIO =============== */
+
+/* ========== Desktop Resolution ========== */
+#portfolio {
+
+  .portfolio__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+    margin-bottom: 2rem;
+
+    .portfolio__item {
+      position: relative;
+      cursor: pointer;
+      color: $dark-grey;
+      padding: 0.25rem 0.75rem;
+      border-radius: 0.5rem;
+      border: 2px solid transparent;
+
+      &:hover {
+        background-color: $brand-primary;
+
+      }
+
+      &.is-active {
+        background-color: $brand-primary;
+        border: 2px solid $brand-primary;
+
+        &::before {
+          content: '';
+          width: 0.75rem;
+          height: 0.75rem;
+          position: absolute;
+          left: 50%;
+          bottom: -2px;
+          transform: translate(-50%, 50%) rotate(45deg);
+          border: 2px solid $brand-primary;
+          background-color: $brand-primary;
+          clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+          border-radius: 0 0 0.25rem 0;
+
+        }
+
+        &:hover {
+          outline: 2px solid $light-grey;
+
+          &::before {
+            border-bottom: 2px solid $light-grey;
+            border-right: 2px solid $light-grey;
+
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: $container-lg;
+    width: 100%;
+
+    .portfolio__card {
+      background-color: $neutral-white;
+      box-shadow: $shadow;
+      padding: 1.25rem;
+      border-radius: 1rem;
+
+      .portfolio__img {
+        border-radius: 0.75rem;
+        width: 100%;
+        aspect-ratio: 32/21;
+
+      }
+
+      .portfolio__title {
+        margin-bottom: 0.25rem;
+
+      }
+
+      .portfolio__button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        gap: .25rem;
+
+        span {
+          color: $brand-primary;
+
+        }
+
+        .portfolio__icon {
+          height: 20px;
+          width: 20px;
+          aspect-ratio: 1/1;
+          margin-inline: auto;
+          margin-bottom: 0;
+          display: inline-block;
+
+        }
+      }
+
+      .portfolio__modal {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(38, 49, 55, 0.75);
+        padding: 1.5rem;
+        display: grid;
+        place-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: .4s;
+        z-index: $z-positive;
+
+        &.is-active {
+          visibility: visible;
+          opacity: 1;
+
+        }
+
+        .portfolio__modal-content {
+          position: relative;
+          background-color: $neutral-white;
+          max-width: $container-md;
+          width: 100%;
+          padding: 4.5rem 2.5rem 2.5rem;
+          border-radius: 1.5rem;
+
+          .portfolio__modal-close {
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            aspect-ratio: 1/1;
+            top: 1.5rem;
+            right: 1.5rem;
+            fill: $dark-grey;
+            cursor: pointer;
+
+          }
+
+          .portfolio__modal-title {
+            font-size: $font-size_h2;
+            color: $brand-primary;
+            font-weight: $weight_bold;
+            margin-bottom: 2rem;
+            text-align: center;
+
+          }
+
+          .portfolio__modal-description {
+            font-size: $font-size_small;
+            margin-bottom: .5rem;
+          }
+
+          .portfolio__modal-list {
+            display: grid;
+            row-gap: .25rem;
+
+            .portfolio__modal-item {
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              width: fit-content;
+              gap: .5rem;
+
+              .portfolio__modal-icon {
+                height: 20px;
+                width: 20px;
+                aspect-ratio: 1/1;
+                margin-inline: auto;
+                margin-bottom: 0;
+                display: inline-block;
+
+              }
+
+              .portfolio__modal-content {
+                padding: 0;
+
+              }
+            }
+          }
+
+          .portfolio__modal-button  {
+            margin-top: 2rem;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            gap: .25rem;
+
+            span {
+              color: $brand-primary;
+
+            }
+
+            .portfolio__modal-icon {
+              height: 80%;
+              width: auto;
+              aspect-ratio: 1/1;
+              margin-inline: auto;
+              margin-bottom: 0;
+              display: inline-block;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ========== Laptop Resolution ========== */
+
+/* ========== Tablet Resolution ========== */
+@media screen and (max-width: $breakpoints-md) {
+
+  #portfolio {
+
+    .portfolio__filters {
+      column-gap: .5rem;
+
+    }
+
+    .portfolio__container {
+      max-width: $container-sm;
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoints-sm) {
+
+  #portfolio {
+
+    .portfolio__filters {
+      column-gap: 0.25rem;
+
+    }
+
+    .portfolio__container {
+      gap: 2rem;
+      grid-template-columns: 1fr;
+      max-width: $container-xs;
+
+      .portfolio__card {
+
+        .portfolio__modal {
+
+          .portfolio__modal-content {
+            padding: 3.5rem 2.5rem 2.5rem;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoints-xs) {
+
+  #portfolio {
+
+    .portfolio__filters {
+      column-gap: 0.25rem;
+
+    }
+
+    .portfolio__container {
+      max-width: 300px;
+
+      .portfolio__card {
+
+        .portfolio__modal {
+
+          .portfolio__modal-content {
+            padding: 3.5rem 1.5rem 1.5rem;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ========== Mobile Resolution ========== */

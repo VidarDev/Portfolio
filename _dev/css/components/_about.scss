@@ -1,0 +1,165 @@
+/* =============== ABOUT =============== */
+
+/* ========== Desktop Resolution ========== */
+#about {
+
+  .about__container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: top;
+    column-gap: 4rem;
+    max-width: $container-lg;
+
+    .about__photo {
+      position: relative;
+      aspect-ratio: 2/3;
+      max-height: 500px;
+      justify-self: end;
+
+      &::before {
+        content: '';
+        z-index: $z-default;
+        box-shadow: $shadow;
+        width: 90%;
+        height: 90%;
+        border: 4px solid white;
+        border-radius: 999px;
+        top: calc(50% - 4px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+      }
+
+      img {
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        justify-self: center;
+        position: relative;
+        border-radius: 35px 170px;
+
+      }
+    }
+
+    .about__stats {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      justify-content: flex-start;
+
+      .about__grid {
+        display: grid;
+        gap: .5rem;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+
+        .about__card {
+          box-shadow: $shadow;
+          text-align: center;
+          padding: 1rem 1.5rem;
+          background-color: $neutral-white;
+          border-radius: .75rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: .25rem;
+
+          .about__icon {
+            width: 1.75rem;
+            height: 1.75rem;
+            aspect-ratio: 1/1;
+            margin-bottom: .25rem;
+
+          }
+
+          .about__title {
+
+          }
+
+          .about__subtitle {
+            color: $light-grey;
+            font-size: $font-size_tiny;
+
+          }
+        }
+      }
+
+      .about__description {
+        color: $light-grey;
+
+      }
+
+      .about__button {
+
+      }
+    }
+  }
+}
+
+/* ========== Laptop Resolution ========== */
+
+/* ========== Tablet Resolution ========== */
+@media screen and (max-width: $breakpoints-lg) {
+
+  #about {
+
+    .about__container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+      row-gap: 3rem;
+      max-width: 100%;
+
+      .about__photo {
+        justify-self: center;
+
+      }
+
+      .about__stats {
+        align-items: center;
+
+      }
+    }
+  }
+}
+
+/* ========== Mobile Resolution ========== */
+@media screen and (max-width: $breakpoints-sm) {
+
+  #about {
+
+    .about__container {
+
+      .about__stats {
+
+        .about__grid {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .about__card {
+            padding: .75rem 1rem;
+            flex: 0 1 calc(50% - .25rem);
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoints-xs) {
+
+  #about {
+
+    .about__container {
+
+      .about__photo {
+        max-height: 400px;
+
+        img {
+          border-radius: 35px 135px;
+
+        }
+      }
+    }
+  }
+}

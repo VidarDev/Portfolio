@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--=============== FAVICON ===============-->
+    <!--    <link rel="icon" href="/favicon.ico" type="image/x-icon">-->
+    <!--    <link rel="apple-touch-icon-precomposed" href="http://example.com/images/apple-touch-icon.png" />-->
+    <!--=============== BALISE SEO ===============-->
+    <title>Richier Théo</title>
+    <meta name="description" content="CV de Théo Richier en HTML">
+    <meta name="keywords" content="HTML, CSS, CV, Job">
+    <meta name="author" content="Théo Richier">
+    <!--=============== BALISE OPENGRAPH ===============-->
+    <meta property="og:title" content="CV - Richier">
+    <meta property=”og:type” content=”siteweb”/>
+    <meta property="og:url" content="..."/>
+    <meta property="og:site_name" content="CV"/>
+    <meta property="og:description" content="CV de Théo Richier en HTML">
+    <meta property="og:locale" content="fr_FR"/>
+    <meta property="og:locale:alternate" content="en_GB"/>
+    <meta name="og:country-name" content="France"/>
+    <meta name="og:image" content=".."/>
+    <!--=============== BALISE META ===============-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <!--=============== CDN ===============-->
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/theme.css" type="text/css">
+    <!--=============== JS ===============-->
+</head>
+<body>
+<!--=============== PRELOADER ===============-->
+<div id="preloader">
+    <div id="preloader-div">
+    </div>
+</div>
+
+<!--=============== HEADER ===============-->
+<header id="header">
+    <div class="header__container container">
+        <a href="#home" class="header__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                 style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"
+                 viewBox="0 0 750 450">
+                <path d="M750 .01H0l72.579 78.814h258.093l.041 159.941 78.979-68.707V78.824h227.553L330.713 342.771V449.09l164.134-143.216L624.862 449.09h107.461L555.297 254.346 750 86.972V.01Z"/>
+            </svg>
+        </a>
+
+        <a href="../fr" class="header__language">
+            <img src="../assets/img/Flag_of_France.png" alt=""/>
+        </a>
+    </div>
+
+    <nav class="nav container">
+        <div class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item home">
+                    <a href="#home" class="nav__link is-active">
+                        <img src="../assets/img/home-linear.svg" alt=""/>
+                    </a>
+                </li>
+
+                <li class="nav__item about">
+                    <a href="#about" class="nav__link">
+                        <img src="../assets/img/user-linear.svg" alt=""/>
+                    </a>
+                </li>
+
+                <li class="nav__item skills">
+                    <a href="#skills" class="nav__link">
+                        <img src="../assets/img/award-linear.svg" alt=""/>
+                    </a>
+                </li>
+
+                <li class="nav__item portfolio">
+                    <a href="#portfolio" class="nav__link">
+                        <img src="../assets/img/folder-linear.svg" alt=""/>
+                    </a>
+                </li>
+
+                <li class="nav__item contact">
+                    <a href="#contact" class="nav__link">
+                        <img src="../assets/img/message-linear.svg" alt=""/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!--=============== MAIN ===============-->
+<main class="main">
+    <!--=============== HOME ===============-->
+    <section class="section__wrapper" id="home">
+        <div class="home__container container">
+            <div class="home__info">
+                <span class="home__greeting">Bienvenue, Je suis</span>
+                <h1 class="home__name">Théo Richier</h1>
+                <h3 class="home__job">Frontend Développeur</h3>
+
+                <div class="home__buttons">
+                    <a download="" href="../assets/pdf/" class="btn btn--outline">
+                        Mon CV
+                    </a>
+                    <a href="#about" class="btn">A propos</a>
+                </div>
+            </div>
+
+            <div class="home__illustration">
+                <div class="home__background"></div>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
+                    <img src="../assets/img/linkedin.svg" alt=""/>
+                </a>
+                <a href="https://github.com/" target="_blank" class="home__social-link">
+                    <img src="../assets/img/github.svg" alt=""/>
+                </a>
+            </div>
+
+            <a href="#about" class="home__scroll">
+                <span class="home__scroll-icon">
+                    <span class="home__scroll-icon__dot"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!--=============== ABOUT ===============-->
+    <section class="section__wrapper" id="about">
+        <span class="section__subtitle">Mon Introduction</span>
+        <h2 class="section__title">A propos</h2>
+
+        <div class="about__container container">
+            <div class="about__photo">
+                <img src="../assets/img/Photo.jpg" alt="">
+            </div>
+
+            <div class="about__stats">
+                <div class="about__grid">
+                    <div class="about__card">
+                        <img src="../assets/img/award.svg" alt="" class="about__icon"/>
+                        <h3 class="about__title">Experience</h3>
+                        <span class="about__subtitle">1 An</span>
+                    </div>
+
+                    <div class="about__card">
+                        <img src="../assets/img/folder.svg" alt="" class="about__icon"/>
+                        <h3 class="about__title">Projets</h3>
+                        <span class="about__subtitle">4 + Projects</span>
+                    </div>
+
+                    <div class="about__card">
+                        <img src="../assets/img/medal-star.svg" alt="" class="about__icon"/>
+                        <h3 class="about__title">Diplôme</h3>
+                        <span class="about__subtitle">BAC +3</span>
+                    </div>
+                </div>
+
+                <p class="about__description">
+                    Étudiant en LP DWCA à l’université de Strasbourg. Je suis actuellement à la
+                    <strong>recherche d'une Alternance</strong> dans le <strong>Développement Front</strong> pour mon
+                    BAC+5 dès Septembre 2023 !<br/>
+                    Motivé et persévérant, je m’adapte aux situations. Soucieux du détail et un bon esprit
+                    d’équipe, je sais prendre l’initiative quand il le faut. Organisé, je sais prendre en
+                    compte les priorités et travailler en autonomie. J’aime apprendre de nouvelles choses !
+                </p>
+
+                <a href="#contact" class="about__button btn">Contacte Moi</a>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== SKILLS ===============-->
+    <section class="section__wrapper" id="skills">
+        <span class="section__subtitle">My abilities</span>
+        <h2 class="section__title">My Experience</h2>
+
+        <div class="skills__container container">
+            <div class="skills__card">
+                <h3 class="skills__title">Frontend</h3>
+
+                <div class="skills__box">
+                    <div class="skills__group">
+                        <div class="skills__item">
+                            <img src="../assets/img/HTML.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__comment">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <img src="../assets/img/CSS.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__comment">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <img src="../assets/img/JavaScript.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">JavaScript</h3>
+                                <span class="skills__comment">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__item">
+                            <img src="../assets/img/Bootstrap.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Bootstrap</h3>
+                                <span class="skills__comment">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <img src="../assets/img/Sass.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">SASS</h3>
+                                <span class="skills__comment">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__card">
+                <h3 class="skills__title">Backend</h3>
+
+                <div class="skills__box">
+                    <div class="skills__group">
+                        <div class="skills__item">
+                            <img src="../assets/img/PHP.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">PHP</h3>
+                                <span class="skills__comment">Basic</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <img src="../assets/img/nodejs.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Node Js</h3>
+                                <span class="skills__comment">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__item">
+                            <img src="../assets/img/MariaDB.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Maria DB</h3>
+                                <span class="skills__comment">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__card">
+                <h3 class="skills__title">Dev Ops</h3>
+
+                <div class="skills__box">
+                    <div class="skills__group">
+                        <div class="skills__item">
+                            <img src="../assets/img/Apache.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Apache</h3>
+                                <span class="skills__comment">Basic</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <img src="../assets/img/Git.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Git</h3>
+                                <span class="skills__comment">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__item">
+                            <img src="../assets/img/Ubuntu.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Ubuntu</h3>
+                                <span class="skills__comment">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__card">
+                <h3 class="skills__title">Autres</h3>
+
+                <div class="skills__box">
+                    <div class="skills__group">
+                        <div class="skills__item">
+                            <img src="../assets/img/Affinity_Designer.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Affinity</h3>
+                                <span class="skills__comment">Basic</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <img src="../assets/img/Blender.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Blender</h3>
+                                <span class="skills__comment">Basic</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <img src="../assets/img/Figma.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Figma</h3>
+                                <span class="skills__comment">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__item">
+                            <img src="../assets/img/Webpack.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Webpack</h3>
+                                <span class="skills__comment">Basic</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <img src="../assets/img/Wordpress.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Wordpress</h3>
+                                <span class="skills__comment">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <img src="../assets/img/Prestashop.svg" alt="" class="skills__icon"/>
+                            <div>
+                                <h3 class="skills__name">Prestashop</h3>
+                                <span class="skills__comment">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== PORTFOLIO ===============-->
+    <section class="section__wrapper" id="portfolio">
+        <span class="section__subtitle">Mon Portfolio</span>
+        <h2 class="section__title">Mes projets récents</h2>
+
+        <div class="portfolio__filters">
+            <span class="portfolio__item is-active" data-filter='all'>Tous</span>
+            <span class="portfolio__item" data-filter='.professional'>Professionel</span>
+            <span class="portfolio__item" data-filter='.personnal'>Personnel</span>
+        </div>
+
+        <div class="portfolio__container container">
+            <div class="portfolio__card mix web">
+                <img src="../assets/img/" alt="" class="portfolio__img">
+
+                <h3 class="portfolio__title">Web design</h3>
+
+                <a class="portfolio__button">
+                    <span>Voir plus</span><img class="portfolio__icon" src="../assets/img/arrow-right.svg" alt=""/>
+                </a>
+
+                <div class="portfolio__modal">
+                    <div class="portfolio__modal-content">
+                        <a><img class="portfolio__modal-close" src="../assets/img/close-square.svg" alt=""></a>
+                        <h3 class="portfolio__modal-title">TEst</h3>
+                        <p class="portfolio__modal-description">
+                            grughoihg ghr gh gh ruhgoi goergh
+                        </p>
+
+                        <ul class="portfolio__modal-list">
+                            <li class="portfolio__modal-item">
+                                <img class="portfolio__modal-icon" src="../assets/img/arrow-right.svg" alt="">
+                                <p class="portfolio__modal-content">
+                                    Test
+                                </p>
+                            </li>
+                            <li class="portfolio__modal-item">
+                                <img class="portfolio__modal-icon" src="../assets/img/arrow-right.svg" alt="">
+                                <p class="portfolio__modal-content">
+                                    Test
+                                </p>
+                            </li>
+                        </ul>
+                        <a href="" class="portfolio__modal-button">
+                            <span>Voir le projet</span><img class="portfolio__modal-icon"
+                                                            src="../assets/img/arrow-right.svg" alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__card mix movil">
+                <img src="../assets/img/" alt="" class="portfolio__img">
+
+                <h3 class="portfolio__title">App movil</h3>
+
+                <a href="" class="portfolio__button">
+                    <span>Voir plus</span><img class="portfolio__icon" src="../assets/img/arrow-right.svg" alt=""/>
+                </a>
+            </div>
+
+            <div class="portfolio__card mix design">
+                <img src="../assets/img/" alt="" class="portfolio__img">
+
+                <h3 class="portfolio__title">Brand design</h3>
+
+                <a href="" class="portfolio__button">
+                    <span>Voir plus</span><img class="portfolio__icon" src="../assets/img/arrow-right.svg" alt=""/>
+                </a>
+            </div>
+
+            <div class="portfolio__card mix web">
+                <img src="../assets/img/work4.jpg" alt="" class="portfolio__img">
+
+                <h3 class="portfolio__title">Web design</h3>
+
+                <a href="" class="portfolio__button">
+                    <span>Voir plus</span><img class="portfolio__icon" src="../assets/img/arrow-right.svg" alt=""/>
+                </a>
+            </div>
+
+            <div class="portfolio__card mix movil">
+                <img src="../assets/img/work5.jpg" alt="" class="portfolio__img">
+
+                <h3 class="portfolio__title">App movil</h3>
+
+                <a href="" class="portfolio__button">
+                    <span>Voir plus</span><img class="portfolio__icon" src="../assets/img/arrow-right.svg" alt=""/>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== EXPERIENCE ===============-->
+    <section class="section__wrapper" id="experience">
+        <span class="section__subtitle">My Services</span>
+        <h2 class="section__title">What I Offer</h2>
+
+        <div class="experience__container container">
+            <div class="experience__card">
+                <ul class="experience__list">
+                    <li class="experience__item">
+                        <div class="experience__marker"></div>
+                        <div class="experience__content">
+                            <h3 class="experience__title">Event Title</h3>
+                            <span class="experience__date">March 12, 2016</span>
+                            <p class="experience__description">Nullam vel sem. Nullam vel sem. Integer ante arcu,
+                                accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut,
+                                faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam
+                                dictum felis
+                                eu pede mollis pretium. Pellentesque ut neque.</p>
+                        </div>
+                    </li>
+                    <li class="experience__item">
+                        <div class="experience__marker"></div>
+                        <div class="experience__content">
+                            <h3 class="experience__title">Event Title</h3>
+                            <span class="experience__date">March 12, 2016</span>
+                            <p class="experience__description">Nullam vel sem. Nullam vel sem. Integer ante arcu,
+                                accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut,
+                                faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam
+                                dictum felis
+                                eu pede mollis pretium. Pellentesque ut neque.</p>
+                        </div>
+                    </li>
+                    <li class="experience__item">
+                        <div class="experience__marker"></div>
+                        <div class="experience__content">
+                            <h3 class="experience__title">Event Title</h3>
+                            <span class="experience__date">March 12, 2016</span>
+                            <p class="experience__description">Nullam vel sem. Nullam vel sem. Integer ante arcu,
+                                accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut,
+                                faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam
+                                dictum felis
+                                eu pede mollis pretium. Pellentesque ut neque.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== CONTACT ===============-->
+    <section class="contact section__wrapper" id="contact">
+        <span class="section__subtitle">Entre en contact</span>
+        <h2 class="section__title">Contacte Moi</h2>
+
+        <div class="contact__container container">
+            <h3 class="contact__title">Parle avec moi</h3>
+
+            <div class="contact__info">
+                <div class="contact__card">
+                    <img class="contact__icon" src="../assets/img/message-notif.svg" alt=""/>
+                    <h3 class="contact__title">Email</h3>
+                    <span class="contact__link">theo@richier.org</span>
+
+                    <!-- Insert your original email -->
+                    <a href="mailto:theo@richier.org<" target="_blank" class="contact__button">
+                        <span>Ecrit moi</span><img class="contact__icon" src="../assets/img/arrow-right.svg" alt=""/>
+                    </a>
+                </div>
+
+                <div class="contact__card">
+                    <img class="contact__icon" src="../assets/img/call-calling.svg" alt=""/>
+                    <h3 class="contact__title">Téléphone</h3>
+                    <span class="contact__link">0651054460</span>
+
+                    <!-- Insert a real number plus country code -->
+                    <a href="tel:+33651054460" target="_blank" class="contact__button">
+                        <span>Appel moi</span><img class="contact__icon" src="../assets/img/arrow-right.svg" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--=============== FOOTER ===============-->
+<footer id="footer">
+    <div class="footer__container container">
+        <ul class="footer__social">
+            <li class="footer__social-link">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.svg" alt=""/></a>
+            </li>
+            <li class="footer__social-link">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/instagram.svg" alt=""/></a>
+            </li>
+            <li class="footer__social-link">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/linkedin.svg" alt=""/></a>
+            </li>
+            <li class="footer__social-link">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/github.svg" alt=""/></a>
+            </li>
+        </ul>
+
+        <span class="footer__copyright">
+            &#169; All rigths reserved
+        </span>
+    </div>
+</footer>
+
+<!--=============== MAIN JS ===============-->
+<script src="../assets/js/theme.js"></script>
+</body>
+</html>

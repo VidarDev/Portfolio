@@ -1,0 +1,128 @@
+/* =============== VARIABLES CSS =============== */
+
+/* ========== Variables :root ========== */
+:root {
+
+  --breakpoints-xs: 400px;
+  --breakpoints-sm: 576px;
+  --breakpoints-md: 768px;
+  --breakpoints-lg: 992px;
+  --breakpoints-xl: 1200px;
+  --breakpoints-xxl: 1500px;
+
+  --container-xs: 400px;
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+  --container-xxl: 1440px;
+
+  --brand-primary: #00a9b9;
+  --brand-secondary: #d7e6e6;
+
+  --dark-grey: #263137;
+  --light-grey: #3c494f;
+
+  --neutral-white: #fdfdfd;
+  --neutral-black: var(--dark-grey);
+
+  --success: #009e15;
+
+  --linear_brand-secondary: linear-gradient(180deg, rgba(215, 230, 230, 1) 0%, rgba(229, 239, 239, 1) 65%, rgba(255, 255, 255, 1) 100%);
+  --linear_brand-primary: linear-gradient(180deg, rgba(0, 169, 185, 1) 0%, rgba(75, 190, 201, 1) 65%, rgba(215, 230, 230, 1) 100%);
+  --linear_light-grey: linear-gradient(180deg, rgba(60, 73, 79, 1) 0%, rgba(39, 107, 116, 1) 65%, rgba(0, 169, 185, 1) 100%);
+  --linear_dark-grey: linear-gradient(180deg, rgba(38, 49, 55, 1) 0%, rgba(46, 57, 63, 1) 65%, rgba(60, 73, 79, 1) 100%);
+
+  --shadow: 0 2px 8px rgba(253, 253, 253, 0.8);
+
+  --m-8: .78125rem;
+  --m-16: 1.5625rem;
+  --m-32: 3.125rem;
+
+  --p-8: .78125rem;
+  --p-16: 1.5625rem;
+  --p-32: 3.125rem;
+
+  --z_negative: -1;
+  --z_zero: 0;
+  --z_default: 1;
+  --z_positive: 10;
+  --z_error: 999;
+
+  --weight_standard: 400;
+  --weight_bold: 700;
+
+  --font-size_h1: 3rem;
+  --font-size_h2: 1.5rem;
+  --font-size_h3: 1rem;
+  --font-size_normal: 1rem;
+  --font-size_small: .875rem;
+  --font-size_tiny: .75rem;
+}
+
+/* ========== Breakpoints and containers ========== */
+$breakpoints-xs: 400px;
+$breakpoints-sm: 576px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 992px;
+$breakpoints-xl: 1200px;
+$breakpoints-xxl: 1500px;
+
+$container-xs: var(--container-xs);
+$container-sm: var(--container-sm);
+$container-md: var(--container-md);
+$container-lg: var(--container-lg);
+$container-xl: var(--container-xl);
+$container-xxl: var(--container-xxl);
+
+/* ========== Colors ========== */
+$brand-primary: var(--brand-primary);
+$brand-secondary: var(--brand-secondary);
+
+$dark-grey : var(--dark-grey);
+$light-grey : var(--light-grey);
+
+$neutral-white : var(--neutral-white);
+$neutral-black : var(--neutral-black);
+
+$success : var(--success);
+
+$linear_brand-secondary : var(--linear_brand-secondary);
+$linear_brand-primary : var(--linear_brand-primary);
+$linear_light-grey : var(--linear_light-grey);
+$linear_dark-grey : var(--linear_dark-grey);
+
+$shadow : var(--shadow);
+
+/* ========== Images ========== */
+
+/* ========== Font and typography ========== */
+
+/* Units */
+
+/* REM unit : 1rem = 16px */
+
+$m-8: var(--m-8);
+$m-16: var(--m-16);
+$m-32: var(--m-32);
+
+$p-8: var(--p-8);
+$p-16: var(--p-16);
+$p-32: var(--p-32);
+
+$weight_standard: var(--weight_standard);
+$weight_bold: var(--weight_bold);
+
+$font-size_h1: var(--font-size_h1);
+$font-size_h2: var(--font-size_h2);
+$font-size_h3: var(--font-size_h3);
+$font-size_normal: var(--font-size_normal);
+$font-size_small: var(--font-size_small);
+$font-size_tiny: var(--font-size_tiny);
+
+/* ========== z index ========== */
+$z_negative: var(--z_negative);
+$z_zero: var(--z_zero);
+$z_default: var(--z_default);
+$z_positive: var(--z_positive);
+$z_error: var(--z_error);

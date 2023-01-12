@@ -1,0 +1,33 @@
+#Fichiers à la racine et extensions à ne pas prendre en compte
+.DS_Store
+/.htaccess
+/.idea/
+/info.php
+/*.sql.gz
+/*.sql
+/*.zip
+
+#Webpack
+/_dev/node_modules/*
+
+#Backoffice
+
+#Fichiers de configuration
+
+#Cache applicatif
+
+#Contenus du site
+
+#Gestion des images + font ( On conserve les images système, et les index.php uniquement dans les autres dossiers )
+/_dev/img/*
+/_dev/fonts/*
+
+#Gestion des overrides ( A définir sur le projet )
+
+#Modules ( S'il y en a. Affiner ici avec les modules spécifiques installés )
+## Modules natifs
+## Modules spécifiques au site
+
+#Modules de dev
+
+#Themes
