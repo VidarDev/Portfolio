@@ -72,11 +72,12 @@
         border-radius: 0.75rem;
         width: 100%;
         aspect-ratio: 32/21;
+        margin-bottom: 1.5rem;
 
       }
 
       .portfolio__title {
-        margin-bottom: 0.25rem;
+        margin-bottom: .25rem;
 
       }
 
@@ -86,6 +87,7 @@
         align-items: center;
         width: fit-content;
         gap: .25rem;
+        cursor: pointer;
 
         span {
           color: $brand-primary;
@@ -151,7 +153,6 @@
           }
 
           .portfolio__modal-description {
-            font-size: $font-size_small;
             margin-bottom: .5rem;
           }
 
