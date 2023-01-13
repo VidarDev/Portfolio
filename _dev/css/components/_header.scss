@@ -17,6 +17,7 @@
     height: 5rem;
 
     .header__logo {
+      max-height: 28px;
 
       &:hover {
         svg {
@@ -33,6 +34,7 @@
     }
 
     .header__language {
+      max-height: 28px;
 
       &:hover {
         img {

@@ -63,17 +63,24 @@
           .experience__content {
 
             .experience__title {
+              margin: .25rem 0;
+              color: $brand-primary;
               font-size: 1.125rem;
               line-height: calc(1.125rem + 0.25rem);
 
             }
 
-            .experience__date {
+            .experience__entreprise-date {
               color: $light-grey;
               font-size: $font-size_tiny;
-              margin-bottom: 0.5rem;
+              margin-bottom: .5rem;
               display: block;
 
+              a {
+                &:hover {
+                  color: $brand-primary;
+                }
+              }
             }
 
             .experience__description {

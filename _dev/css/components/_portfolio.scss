@@ -214,6 +214,16 @@
 }
 
 /* ========== Laptop Resolution ========== */
+@media screen and (max-width: $breakpoints-lg) {
+
+  #portfolio {
+
+    .portfolio__container {
+      gap: 2rem;
+
+    }
+  }
+}
 
 /* ========== Tablet Resolution ========== */
 @media screen and (max-width: $breakpoints-md) {
@@ -248,16 +258,6 @@
       grid-template-columns: 1fr;
       max-width: $container-xs;
 
-      .portfolio__card {
-
-        .portfolio__modal {
-
-          .portfolio__modal-content {
-            padding: 3.5rem 2.5rem 2.5rem;
-
-          }
-        }
-      }
     }
   }
 }
