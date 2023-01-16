@@ -9,7 +9,7 @@
     .experience__card {
       background-color: $neutral-white;
       box-shadow: $shadow;
-      padding: 3rem 3.5rem 3rem 3.25rem;
+      padding: 3rem 3rem 3rem 2.75rem;
       border-radius: 1.25rem;
 
       .experience__list {
@@ -105,8 +105,15 @@
     .experience__container {
 
       .experience__card {
-        padding: 2rem 2.5rem 2rem 2.25rem;
+        padding: 2rem 2rem 2rem 1.75rem;
 
+        .experience__list {
+
+          .experience__item {
+            gap: 1rem;
+
+          }
+        }
       }
     }
   }
@@ -121,6 +128,13 @@
       .experience__card {
         padding: 2rem 1.5rem 2rem 1.25rem;
 
+        .experience__list {
+
+          .experience__item {
+            gap: .5rem;
+
+          }
+        }
       }
     }
   }
