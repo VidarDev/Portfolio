@@ -192,6 +192,10 @@
             width: fit-content;
             gap: .25rem;
 
+            &.last {
+              margin-top: 0.5rem;
+            }
+
             span {
               color: $brand-primary;
 
