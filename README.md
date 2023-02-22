@@ -4,9 +4,10 @@ Bienvenue sur mon portfolio ! Vous pouvez y trouver mes projets personnels et pr
 
 ## Projets
 
-- Projet 1 : [Nom du projet](lien github)
-- Projet 2 : [Nom du projet](lien github)
-- Projet 3 : [Nom du projet](lien github)
+- Projet 1 : [CGV](https://www.cgv.fr/)
+- Projet 2 : [Politec](https://politec.fr/)
+- Projet 3 : [Portfolio](https://github.com/VidarDev/Portfolio)
+- Projet 3 : [Marble Race](https://theo.richier.org/unity/)
 
 ## Compétences
 
